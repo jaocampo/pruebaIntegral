@@ -1,20 +1,51 @@
-<div class="navbar navbar-default navbar-static-top" ng-controller="NavbarController">
-  <div class="container">
-    <div class="navbar-header">
-      <button class="navbar-toggle" type="button" ng-click="nav.isCollapsed = !nav.isCollapsed">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a href="/" class="navbar-brand">paraiso-ciclista</a>
+ <!----- start-header---->
+  <div class="banner" id="home">
+      <div class="header-bottom">
+       <div class="fixed-header">
+        <div class="container">
+          <div class="logo">
+            <a href="index.html"><h1>Bicletas Holanda</h1></a>
+          </div>
+          <span class="menu"> </span>
+          <div class="top-menu">
+          <nav class="navigation">
+            <ul class="cl-effect-16">
+              <li><a class="active" href="index.html">Home</a></li>
+              <li><a href="">About</a></li>
+            
+            </ul>
+          </nav>    
+          </div>
+          <div class="clearfix"></div>
+        </div>
+       </div>
     </div>
-    <div uib-collapse="nav.isCollapsed" class="navbar-collapse collapse" id="navbar-main">
-      <ul class="nav navbar-nav">
-        <li ng-repeat="item in nav.menu" ui-sref-active="active">
-            <a ui-sref="{{item.state}}">{{item.title}}</a>
-        </li>
-      </ul>
+
+
+      <div class="banner-bottom wow bounceIn animated" data-wow-delay="0.4s">
+      <div class="container">
+          <h2>BIENVENIDOS</h2>
+  
+       </div>
+
     </div>
-  </div>
-</div>
+
+    <section class="InfoContainer">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-xs-12 col-md-4">
+                <img src="../../assets/images/images.jpg"  class="animated zoomInLeft"  alt="Calidad">
+                <h4 class="animated flip">Alquiler</h4>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <img src="../../assets/images/images.jpg" class="animated zoomInLeft"  alt="Envio">
+                <h4 class="animated flip">Ciclo Paseos</h4>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <img src="../../assets/images/images.jpg"  class="animated zoomInLeft" alt="Calidad">
+                <h4  class="animated flip">Accesorios</h4>
+            </div>
+
+        </div>
+    </div>
+</section>

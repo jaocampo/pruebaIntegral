@@ -37,8 +37,13 @@
   margin 0.2em 0
   padding 0.2em 0
 
+body
+  font-family: 'Raleway', sans-serif;
+
 // Component styles are injected through grunt
 /* inject:styl */
-@import "admin/admin"
-@import "main/main"
+@import 'main/main';
+@import '../components/footer/footer';
+@import '../components/modal/modal';
+@import '../components/navbar/navbar';
 /* endinject */
