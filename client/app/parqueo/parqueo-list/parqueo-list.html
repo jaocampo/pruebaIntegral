@@ -1,6 +1,7 @@
 <h2>PARQUEOS</h2>
-<div class="container">
-	<table class="row">
+<div class="col-lg-6">
+	<div class="container">
+	<table class="row table table-hover">
 		<thead>
 			<tr>
 				<th>Codigo Ficha</th>
@@ -12,14 +13,18 @@
 			</tr>
 		</thead>
 		<tbody>
-			<tr>
-				<td>{{item}}</td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
+			<tr ng-repeat="item in vm.parqueos">
+				<td>{{item.codigoFicha}}</td>
+				<td>{{item.matricula.matricula}}</td>
+				<td>{{item.idCliente.nombre}}</td>
+				<td>{{item.horas}}</td>
+				<td>{{item.precio}}</td>
+				<td>{{item.fecha}}</td>
 			</tr>
 		</tbody>
 	</div>
+</div>
+<div class="container col-lg-offset-7">
+	<input type="number" ng-model="vm.parqueos.codigoFicha">
+	<button ng-click="vm.obtener(item)" class="btn btn-success">Calcular Pago</button>
 </div>
